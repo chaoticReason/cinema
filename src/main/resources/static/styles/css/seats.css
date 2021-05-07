@@ -1,0 +1,138 @@
+/* line 1, ../scss/seats.scss */
+body {
+  margin: 60px; }
+
+/* line 5, ../scss/seats.scss */
+.theatre {
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 13, ../scss/seats.scss */
+.cinema-seats {
+  display: flex; }
+  /* line 16, ../scss/seats.scss */
+  .cinema-seats .seat {
+    cursor: pointer;
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    margin-top: -32px; }
+    /* line 25, ../scss/seats.scss */
+    .cinema-seats .seat.taken {
+      background: linear-gradient(to top, #6c757d, #6c757d, #495057, #adb5bd); }
+    /* line 29, ../scss/seats.scss */
+    .cinema-seats .seat.free {
+      background: linear-gradient(to top, #084298, #084298, #084298, #6ea8fe); }
+      /* line 32, ../scss/seats.scss */
+      .cinema-seats .seat.free:hover:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(234, 234, 234, 0.5);
+        border-radius: 7px; }
+      /* line 44, ../scss/seats.scss */
+      .cinema-seats .seat.free.active:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #cc9a06, #cc9a06, #997404, #ffda6a);
+        border-radius: 7px; }
+
+/* line 61, ../scss/seats.scss */
+.left .cinema-row {
+  transform: skew(-15deg);
+  margin: 0 6px; }
+/* line 66, ../scss/seats.scss */
+.left .seat {
+  transform: skew(20deg); }
+/* line 68, ../scss/seats.scss */
+.left .row-2 {
+  transform: skew(-13deg); }
+  /* line 70, ../scss/seats.scss */
+  .left .row-2 .seat {
+    transform: skew(18deg); }
+/* line 73, ../scss/seats.scss */
+.left .row-3 {
+  transform: skew(-12deg); }
+  /* line 75, ../scss/seats.scss */
+  .left .row-3 .seat {
+    transform: skew(16deg); }
+/* line 78, ../scss/seats.scss */
+.left .row-4 {
+  transform: skew(-11deg); }
+  /* line 80, ../scss/seats.scss */
+  .left .row-4 .seat {
+    transform: skew(15deg); }
+/* line 83, ../scss/seats.scss */
+.left .row-5 {
+  transform: skew(-10deg); }
+  /* line 85, ../scss/seats.scss */
+  .left .row-5 .seat {
+    transform: skew(12deg); }
+/* line 88, ../scss/seats.scss */
+.left .row-6 {
+  transform: skew(-9deg); }
+  /* line 90, ../scss/seats.scss */
+  .left .row-6 .seat {
+    transform: skew(10deg); }
+/* line 93, ../scss/seats.scss */
+.left .row-7 {
+  transform: skew(-7deg); }
+  /* line 95, ../scss/seats.scss */
+  .left .row-7 .seat {
+    transform: skew(8deg); }
+
+/* line 100, ../scss/seats.scss */
+.right {
+  margin-left: 70px; }
+  /* line 103, ../scss/seats.scss */
+  .right .cinema-row {
+    transform: skew(7deg);
+    margin: 0 6px; }
+  /* line 108, ../scss/seats.scss */
+  .right .seat {
+    transform: skew(-8deg); }
+  /* line 110, ../scss/seats.scss */
+  .right .row-2 {
+    transform: skew(9deg); }
+    /* line 112, ../scss/seats.scss */
+    .right .row-2 .seat {
+      transform: skew(-10deg); }
+  /* line 115, ../scss/seats.scss */
+  .right .row-3 {
+    transform: skew(10deg); }
+    /* line 117, ../scss/seats.scss */
+    .right .row-3 .seat {
+      transform: skew(-12deg); }
+  /* line 120, ../scss/seats.scss */
+  .right .row-4 {
+    transform: skew(11deg); }
+    /* line 122, ../scss/seats.scss */
+    .right .row-4 .seat {
+      transform: skew(-15deg); }
+  /* line 125, ../scss/seats.scss */
+  .right .row-5 {
+    transform: skew(12deg); }
+    /* line 127, ../scss/seats.scss */
+    .right .row-5 .seat {
+      transform: skew(-16deg); }
+  /* line 130, ../scss/seats.scss */
+  .right .row-6 {
+    transform: skew(13deg); }
+    /* line 132, ../scss/seats.scss */
+    .right .row-6 .seat {
+      transform: skew(-18deg); }
+  /* line 135, ../scss/seats.scss */
+  .right .row-7 {
+    transform: skew(15deg); }
+    /* line 137, ../scss/seats.scss */
+    .right .row-7 .seat {
+      transform: skew(-20deg); }

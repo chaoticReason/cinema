@@ -1,0 +1,7 @@
+.scrolling-wrapper{
+    overflow-x: auto;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}

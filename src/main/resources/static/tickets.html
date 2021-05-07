@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
+  <!--important!!!!--- script below-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles/css/all.css">
+  <link rel="stylesheet" type="text/css" href="styles/css/ticket.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/tickets.css">
+</head>
+<body>
+    <div class="container">
+        <section class="mb-5">
+            <div class="mid-header">Сегодня</div>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-1">
+                <div class="col-6" id="ticket-1-1">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="mid-header">Завтра</div>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-1">
+                <div class="col-6">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card ticket-block me-4 mt-4" th:fragment="ticket">
+                        <div class="d-flex">
+
+                            <div class="ticket-head col-3 rounded-start" style="background: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/7/6/9/1262769_The-Young-Pope.jpg) center / cover no-repeat;"></div>
+
+                            <div class="ticket-body col-7 py-4 px-3">
+                                <div class="mx-2">
+                                    <h5 class="fw-normal">Молодой папа: 1–2 серия</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <h1 class="ms-2 me-3 my-auto">17:00</h1>
+                                    <h3 class="mx-2 my-auto">Октябрь</h3>
+                                </div>
+                                <div class="d-flex flex-wrap mt-3 mb-2">
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>12</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                    <h6 class="mx-2 mb-1 link-primary rounded fw-normal">Ряд <span>12</span> Место <span>13</span></h6>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="mx-2 my-auto">Id <span class="fw-light">121314</span></div>
+                                    <div class="mx-2 my-auto">Hash <span class="fw-light">121313</span></div>
+                                    <div class="mx-2 my-auto">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                data-title="Как распечатать билет?"
+                                                data-toggle="popover" data-placement="right"
+                                                data-content="Нужно ввести коды в стенд возле кассы"
+                                                id="codesExplained">
+                                            <i class="bi bi-question"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-tail col-2 d-flex justify-content-between flex-column py-3">
+                                <div class="mx-auto"> 5 р.</div>
+                                <div class="d-flex flex-column">
+                                    <div class="mt-auto mx-auto mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mx-auto my-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm ">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/ticket.js"></script>
+</body>
+</html>

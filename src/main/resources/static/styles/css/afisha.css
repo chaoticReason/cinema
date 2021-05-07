@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/* line 18, ../scss/afisha.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 22, ../scss/afisha.scss */
+#today-radio-button {
+  padding-left: 0; }
+
+/* line 27, ../scss/afisha.scss */
+.movie-card {
+  color: #fff;
+  width: 350px; }
+  /* line 31, ../scss/afisha.scss */
+  .movie-card .wrapper {
+    border-radius: 6px 0 6px 6px;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden; }
+    /* line 37, ../scss/afisha.scss */
+    .movie-card .wrapper:hover .data {
+      transform: translateY(0); }
+  /* line 8, ../scss/afisha.scss */
+  .movie-card .header::before, .movie-card .header::after {
+    content: '';
+    display: table; }
+  /* line 13, ../scss/afisha.scss */
+  .movie-card .header::after {
+    clear: both; }
+  /* line 44, ../scss/afisha.scss */
+  .movie-card .header .date {
+    border-bottom-left-radius: 6px;
+    background-color: white;
+    color: #000;
+    padding: 0.4em 0.4em 0.8em 0.8em;
+    float: right;
+    font-size: 14px;
+    font-weight: 300; }
+  /* line 54, ../scss/afisha.scss */
+  .movie-card .data {
+    border-radius: 6px;
+    background: linear-gradient(345deg, rgba(10, 88, 202, 0.7), rgba(10, 88, 202, 0) 65%), linear-gradient(15deg, rgba(10, 88, 202, 0.7), rgba(10, 88, 202, 0) 65%), linear-gradient(0deg, rgba(10, 88, 202, 0.8), rgba(10, 88, 202, 0) 100%);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(100% - 180px));
+    transition: transform 0.3s; }
+    /* line 63, ../scss/afisha.scss */
+    .movie-card .data .content {
+      padding: 1em;
+      position: relative;
+      z-index: 1; }
+  /* line 69, ../scss/afisha.scss */
+  .movie-card .title-container {
+    height: 180px; }
+  /* line 72, ../scss/afisha.scss */
+  .movie-card .title {
+    margin-top: 10px;
+    font-family: "Playfair Display SC", serif;
+    font-size: 36px; }
+  /* line 77, ../scss/afisha.scss */
+  .movie-card .text {
+    height: 70px;
+    margin: 0; }
+  /* line 81, ../scss/afisha.scss */
+  .movie-card .cinema-caption {
+    font-size: 20px;
+    margin-bottom: 4px; }
+  /* line 85, ../scss/afisha.scss */
+  .movie-card .a {
+    color: #fff; }
+  /* line 88, ../scss/afisha.scss */
+  .movie-card .button {
+    display: block;
+    color: #fff;
+    width: 100px;
+    margin: 2em auto 1em;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    position: relative;
+    font-weight: 700; }

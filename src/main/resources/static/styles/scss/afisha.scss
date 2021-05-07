@@ -1,0 +1,101 @@
+@import "all-variables";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+
+$movie-card-font: 'Playfair Display SC', serif;
+
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#today-radio-button{
+  padding-left: 0;
+}
+
+// Base styles
+.movie-card {
+  color: $white;
+  width: 350px;
+
+  .wrapper {
+    border-radius: $rounded 0 $rounded $rounded;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .data {
+        transform: translateY(0);
+      }
+    }
+  }
+  .header {
+    @include cf;
+    .date {
+      border-bottom-left-radius: $rounded;
+      background-color: white;
+      color: $black;
+      padding: 0.4em 0.4em 0.8em 0.8em;
+      float: right;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .data {
+    border-radius: $rounded;
+    background: $gradient;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(100% - 180px));
+    transition: transform 0.3s;
+    .content {
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .title-container{
+    height: 180px;
+  }
+  .title {
+    margin-top: 10px;
+    font-family: $movie-card-font;
+    font-size: 36px;
+  }
+  .text {
+    height: 70px;
+    margin: 0;
+  }
+  .cinema-caption{
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .a{
+    color: $white;
+  }
+  .button {
+    display: block;
+    color: $white;
+    width: 100px;
+    margin: 2em auto 1em;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    position: relative;
+    font-weight: 700;
+    &:hover {
+    }
+  }
+}

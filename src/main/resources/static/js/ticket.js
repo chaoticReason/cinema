@@ -1,0 +1,3 @@
+$('#codesExplained').popover({
+    trigger: 'hover'
+});

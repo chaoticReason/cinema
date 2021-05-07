@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
+    <!--important!!!!--- script below-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/css/payment.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/all.css">
+</head>
+<body>
+<!-- Modal add a credit card-->
+<div class="modal fade text-light" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-primary">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between mb-4">
+                    <h2 class="modal-title my-auto" id="cardModalLabel">Добавить метод оплаты</h2>
+                    <button type="button" class="btn-close my-auto" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="form-group mb-3">
+                        <div class="btn-group w-100" role="group" aria-label="Выбор способа оплаты">
+                            <input type="radio" class="btn-check" name="btnradio" id="choice-visa" autocomplete="off" checked>
+                            <label class="btn btn-outline-light" for="choice-visa">VISA</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="choice-mastercard" autocomplete="off">
+                            <label class="btn btn-outline-light" for="choice-mastercard">MasterCard</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="choice-paypal" autocomplete="off">
+                            <label class="btn btn-outline-light" for="choice-paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="visually-hidden" for="numberCard">Number</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="bi bi-hash"></i></div>
+                            <input type="text" class="form-control" id="numberCard" placeholder="1234 5678 9101 1121">
+                        </div>
+                    </div>
+                    <div class="form-group mb-2 mt-4">
+                        <div class="my-auto">
+                            <button type="submit" class="btn btn-warning px-4"> Подтвердить </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+      <div class="big-header">Аккаунт</div>
+      <table class="table mt-4">
+          <tbody>
+          <tr>
+              <th class="col-3">Id</th>
+              <th class="col-6">Почта</th>
+          </tr>
+          <tr>
+              <td>2357869432</td>
+              <td>email@example.com</td>
+          </tr>
+          </tbody>
+      </table>
+      <div class="mt-4">
+          <div>
+              <div class="mb-2">
+                  <a class="link-secondary me-1" role="button" data-bs-toggle="collapse" data-bs-target="#collapsePassword" aria-expanded="false" aria-controls="collapsePassword">
+                      Сменить пароль
+                  </a>
+                  <div class="collapse mt-2 mb-3" id="collapsePassword">
+                      <form class="row row-cols-lg-auto g-3 align-items-center">
+                          <div class="col-12">
+                              <label class="visually-hidden" for="oldPasswField">Старый</label>
+                              <div class="input-group">
+                                  <div class="input-group-text">Старый</div>
+                                  <input type="password" class="form-control" id="oldPasswField">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <label class="visually-hidden" for="newPasswField">Новый</label>
+                              <div class="input-group">
+                                  <div class="input-group-text">Новый</div>
+                                  <input type="password" class="form-control" id="newPasswField">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <label class="visually-hidden" for="repeatPasswField">Повторить</label>
+                              <div class="input-group">
+                                  <div class="input-group-text">Повторить</div>
+                                  <input type="password" class="form-control" id="repeatPasswField">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Подтвердить</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div>
+                  <a class="link-secondary" data-bs-toggle="collapse" href="#collapseEmail" role="button" aria-expanded="false" aria-controls="collapseEmail">
+                      Сменить почту
+                  </a>
+                  <div class="collapse mt-2 mb-3" id="collapseEmail">
+                      <form class="row row-cols-lg-auto g-3 align-items-center">
+                          <div class="col-12">
+                              <label class="visually-hidden" for="emailField">Email</label>
+                              <div class="input-group">
+                                  <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                                  <input type="text" class="form-control" id="emailField" placeholder="email@example.com">
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Подтвердить</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+          <div class="big-header">Способы оплаты</div>
+          <div class="row mt-4">
+              <div class="col-4">
+                  <div class="card card-body bg-primary payment-card">
+                     <div class="d-flex justify-content-between">
+                         <h4 class="text-light">VISA</h4><h5 class="text-light">73** **** **** 0678</h5>
+                     </div>
+                      <div class="mb-2 mt-3 d-flex justify-content-end">
+                          <div class="my-auto">
+                              <button type="button" class="btn btn-outline-warning btn-sm ">
+                                  <i class="bi bi-trash"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-outline-primary btn-lg col-4 payment-card"
+                      data-toggle="modal" data-target="#cardModal">
+                  <h2><i class="bi bi-plus"></i></h2>
+              </button>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
