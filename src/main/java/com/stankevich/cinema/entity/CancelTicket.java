@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="cancel_ticket")
@@ -18,7 +15,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 public class CancelTicket extends BaseEntity{
 
-    @Column(nullable=false)
     @ManyToOne
+    @JoinColumn(nullable=false)
     private Ticket ticket;
 }
